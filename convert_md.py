@@ -54,10 +54,6 @@ with open(input_md_file, mode="r") as input_file:
 with open(output_csv_file_path, mode="w", newline="") as csv_file:
     writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
 
-    # Write the header row
-    header = list(rows[0].keys())
-    writer.writerow(header)
-
     # Write the data rows
     for row in rows:
         writer.writerow(row.values())
