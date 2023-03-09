@@ -16,6 +16,9 @@ This list is created because I couldn't find any fast license overview.
 
 ## Licences Overview
 
+* [licenses.csv](https://raw.githubusercontent.com/YunaBraska/software-licenses/main/licenses.csv)
+* [licenses.json](https://raw.githubusercontent.com/YunaBraska/software-licenses/main/licenses.json)
+
 | Short             | Name                                                   | Commercial Use | Modification | Distribution | Patent Use | Private Use | Limitations               | Trademark Use | Liability | Warranty | Release Date | Link                                                                                               |
 |-------------------|--------------------------------------------------------|----------------|--------------|--------------|------------|-------------|---------------------------|---------------|-----------|----------|--------------|----------------------------------------------------------------------------------------------------|
 | WTFPL             | Do What the Fuck You Want to Public License            | Yes            | Yes          | Yes          | Yes        | Yes         | None                      | Yes           | None      | No       | 2000         | [Link](http://www.wtfpl.net/about/)                                                                |
