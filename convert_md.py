@@ -17,6 +17,7 @@ rows = []
 # Open the output file for writing
 # Open the input file for reading
 with open(input_md_file, mode="r") as input_file:
+    header_processed = False
     for line in input_file:
         # Process each line
         if line.startswith("|") and not line.strip().startswith("|-"):
@@ -31,28 +32,23 @@ with open(input_md_file, mode="r") as input_file:
                 link = ""
 
             # Construct a dictionary for the row
-            row = {
-                "Short": split_line[0],
-                "Name": split_line[1],
-                "Commercial Use": split_line[2],
-                "Modification": split_line[3],
-                "Distribution": split_line[4],
-                "Patent Use": split_line[5],
-                "Private Use": split_line[6],
-                "Limitations": split_line[7],
-                "Trademark Use": split_line[8],
-                "Liability": split_line[9],
-                "Warranty": split_line[10],
-                "Release Date": split_line[11],
-                "Link": link,
-            }
-
-            # Add the dictionary to the list
-            rows.append(row)
+            if not header_processed:
+                header_processed = True
+                header_names = split_line
+            else:
+                row = {}
+                for i, key in enumerate(header_names):
+                    row[key] = split_line[i]
+                row["Link"] = link
+                # Add the dictionary to the list
+                rows.append(row)
 
 # Open the output CSV file for writing
 with open(output_csv_file_path, mode="w", newline="") as csv_file:
     writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
+
+    # Write the headers
+    writer.writerow(header_names)
 
     # Write the data rows
     for row in rows:

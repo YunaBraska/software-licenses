@@ -1,20 +1,5 @@
 [
     {
-        "Short": "Short",
-        "Name": "Name",
-        "Commercial Use": "Commercial Use",
-        "Modification": "Modification",
-        "Distribution": "Distribution",
-        "Patent Use": "Patent Use",
-        "Private Use": "Private Use",
-        "Limitations": "Limitations",
-        "Trademark Use": "Trademark Use",
-        "Liability": "Liability",
-        "Warranty": "Warranty",
-        "Release Date": "Release Date",
-        "Link": ""
-    },
-    {
         "Short": "WTFPL",
         "Name": "Do What the Fuck You Want to Public License",
         "Commercial Use": "Yes",
