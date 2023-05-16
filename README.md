@@ -6,7 +6,7 @@
 
 This list is created because I couldn't find any fast license overview.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=HFHFUT3G6TZF6)
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/YunaBraska)
 
 [![Issues][issues_shield]][issues_link]
 [![Commit][commit_shield]][commit_link]
